@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/lipsum-generator', 'user-generator@index')->name('lipsum-generator.index');
+Route::get('/lipsum-generator', 'LipsumGeneratorController@index')->name('lipsum-generator.index');
 Route::get('/lipsum-generator/create', 'LipsumGeneratorController@create')->name('lipsum-generator.create');
 Route::post('/lipsum-generator', 'LipsumGeneratorController@store')->name('lipsum-generator.store');
 Route::get('/lipsum-generator/{book}', 'LipsumGeneratorController@show')->name('lipsum-generator.show');

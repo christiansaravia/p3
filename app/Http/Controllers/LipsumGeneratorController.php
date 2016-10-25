@@ -15,7 +15,7 @@ class LipsumGeneratorController extends Controller
      */
     public function index()
     {
-        return 'Lorem Ipsum generator will go here.'
+        return 'Lorem Ipsum generator will go here.';
     }
 
     /**
