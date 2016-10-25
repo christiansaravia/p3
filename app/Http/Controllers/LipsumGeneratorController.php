@@ -47,7 +47,7 @@ class LipsumGeneratorController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('lipsum-generator.show')->with('id', $id);
     }
 
     /**

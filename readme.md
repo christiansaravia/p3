@@ -16,5 +16,5 @@ No login required.
 
 ## Outside code
 * External package: #
-* Skeleton: http://getskeleton.com/
+* Bootstrap: http://getbootstrap.com/
 * Font Awesome: http://fontawesome.io/
