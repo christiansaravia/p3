@@ -13,26 +13,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,600" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/edf8d2d607.js"></script>
+
     {{-- Yield any page specific CSS files or anything else you might want in the <head> --}}
     @yield('head')
   </head>
   <body>
+    <div class="container">
 
-    <header>
-        <img
-        src='http://making-the-internet.s3.amazonaws.com/laravel-foobooks-logo@2x.png'
-        style='width:300px'
-        alt='Foobooks Logo'>
-    </header>
+      <section>
+          {{-- Main page content will be yielded here --}}
+          @yield('content')
+      </section>
 
-    <section>
-        {{-- Main page content will be yielded here --}}
-        @yield('content')
-    </section>
+      <hr>
+      <footer style="font-size:.8em">
+        Built by Christian Saravia, &copy; {{ date('Y') }}. Source code: <a href="https://github.com/christiansaravia/p3"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </footer>
 
-    <footer>
-        &copy; {{ date('Y') }}
-    </footer>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
