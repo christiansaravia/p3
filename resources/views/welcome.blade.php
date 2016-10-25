@@ -7,6 +7,9 @@
 
         <title>Laravel</title>
 
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
@@ -65,6 +68,13 @@
         </style>
     </head>
     <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1">
+            <h1>Developer's Best Friend</h1>
+          </div>
+        </div>
+      </div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
