@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,600" type="text/css">
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/edf8d2d607.js"></script>
 
-    {{-- Yield any page specific CSS files or anything else you might want in the <head> --}}
+    {{-- Yield any page specific CSS files or anything else you might want in the head --}}
     @yield('head')
   </head>
   <body>

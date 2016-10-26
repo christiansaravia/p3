@@ -15,7 +15,7 @@ class UserGeneratorController extends Controller
      */
     public function index()
     {
-        return 'User generator will go here.';
+        return view('user-generator');
     }
 
     /**
