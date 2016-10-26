@@ -15,7 +15,9 @@ class UserGeneratorController extends Controller
      */
     public function index()
     {
-        return view('user-generator');
+        $users = ['Taylor, Christian, Ana'];
+
+        return view('pages.user-generator')->with('users', $users);
     }
 
     /**

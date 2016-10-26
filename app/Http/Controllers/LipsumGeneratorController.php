@@ -15,7 +15,8 @@ class LipsumGeneratorController extends Controller
      */
     public function get()
     {
-        return view('lipsum-generator');
+      $quantity = 0;
+      return view('pages.lipsum-generator')->with('quantity', $quantity);
     }
 
     /**
@@ -26,6 +27,7 @@ class LipsumGeneratorController extends Controller
      */
     public function post(Request $request)
     {
-      return 'Number of paragraphs: '.$_POST['paragraphs'];
+      $quantity = $_POST['quantity'];
+      return view('pages.lipsum-generator')->with('quantity', $quantity);
     }
 }

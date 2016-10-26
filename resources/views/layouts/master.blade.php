@@ -34,6 +34,7 @@
       <footer style="font-size:.8em">
         Built by Christian Saravia, &copy; {{ date('Y') }}. Source code: <a href="https://github.com/christiansaravia/p3"><i class="fa fa-github" aria-hidden="true"></i></a>
       </footer>
+      <br>
 
     </div>
 
