@@ -26,6 +26,18 @@
       </form>
     </div>
   </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-md-12">
+      <?php
+        $generator = new Badcow\LoremIpsum\Generator();
+        $paragraphs = $generator->getParagraphs(0);
+        echo implode('<p>', $paragraphs);
+      ?>
+    </div>
+  </div>
 @stop
 
 @section('body')

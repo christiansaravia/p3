@@ -4,9 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed9df8b872992035f068a7fe461a635a",
-    "content-hash": "76036da3b5b55b91dbe1e1affa01bf9e",
+    "hash": "bc6b3f406bfe5a95160d11089fa012e8",
+    "content-hash": "a49f6ac16bd8dc85a7765dc30241be61",
     "packages": [
+        {
+            "name": "badcow/lorem-ipsum",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Badcow/LoremIpsum.git",
+                "reference": "7e685497e92d71d0ebbd067d51892f3308cc72e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Badcow/LoremIpsum/zipball/7e685497e92d71d0ebbd067d51892f3308cc72e1",
+                "reference": "7e685497e92d71d0ebbd067d51892f3308cc72e1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "suggest": {
+                "twig/twig": "Twig is a template language for PHP, released under the new BSD license (code and documentation)."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Badcow\\LoremIpsum\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Williams",
+                    "email": "sam@badcow.co"
+                },
+                {
+                    "name": "Mathew Tinsley",
+                    "email": "tinsley@tinsology.net"
+                }
+            ],
+            "description": "Lorem ipsum generator.",
+            "time": "2015-04-10 00:15:43"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
@@ -308,16 +351,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.3.19",
+            "version": "v5.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f1a5bb417b3e0d1949fe84617eacd1a14d75d7f1"
+                "reference": "09f2515b72eba3229dfce44a801852b9b8d011e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f1a5bb417b3e0d1949fe84617eacd1a14d75d7f1",
-                "reference": "f1a5bb417b3e0d1949fe84617eacd1a14d75d7f1",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/09f2515b72eba3229dfce44a801852b9b8d011e2",
+                "reference": "09f2515b72eba3229dfce44a801852b9b8d011e2",
                 "shasum": ""
             },
             "require": {
@@ -432,7 +475,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-10-17 19:35:14"
+            "time": "2016-10-25 13:38:24"
         },
         {
             "name": "league/flysystem",
@@ -2577,16 +2620,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.6.1",
+            "version": "5.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "60c32c5b5e79c2248001efa2560f831da11cc2d7"
+                "reference": "cd13b23ac5a519a4708e00736c26ee0bb28b2e01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/60c32c5b5e79c2248001efa2560f831da11cc2d7",
-                "reference": "60c32c5b5e79c2248001efa2560f831da11cc2d7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/cd13b23ac5a519a4708e00736c26ee0bb28b2e01",
+                "reference": "cd13b23ac5a519a4708e00736c26ee0bb28b2e01",
                 "shasum": ""
             },
             "require": {
@@ -2655,7 +2698,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-10-07 13:03:26"
+            "time": "2016-10-25 07:40:25"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3440,7 +3483,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "badcow/lorem-ipsum": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
