@@ -2,18 +2,18 @@
 
 @section('title')
   Developer's Best Friend
-@stop
+@endsection
 
 @section('head')
-@stop
+@endsection
 
 @section('content')
 
 <!-- Start of Home Button
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="row">
-  <div class="col-md-12">
-    <p class="text-left home"><a href="./"><i class="fa fa-home" aria-hidden="true"></i></a></p>
+  <div class="col-md-12 home">
+    <p class="text-left"><a href="./">Home <i class="fa fa-home" aria-hidden="true"></i></a></p>
   </div>
 </div>
 <!-- End of Home Button
@@ -24,18 +24,14 @@
 <div class="row">
   <div class="col-md-12">
     <h2>Random User Generator</h2>
-    <form method="POST" action="/user-generator" class="form-inline">
+  </div>
+  <div class="col-xs-6 col-sm-4">
+    <form method="POST" action="/user-generator">
       {{ csrf_field() }}
       <div class="form-group">
-        <label for="users">Number of users: </label>
-        <input type="text" name="users" value="6" class="form-control">
+        <label for="quantity">Number of users: </label>
+        <input type="text" name="quantity" placeholder="Type number between 1 - 99" class="form-control">
       </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Include Birthdate
-        </label>
-      </div>
-      <br><br>
       <button type="submit" class="btn btn-primary">Generate</button>
     </form>
   </div>
@@ -47,24 +43,33 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="row">
   <div class="col-md-12">
-    @if ($users >= 1 && $users <=99)
-      <?php
-        $faker = Faker\Factory::create();
-        for ($i=0; $i < $users; $i++) {
-          echo $faker->name; ?>
-          <br> <?php
-          echo $faker->date($format = 'Y-m-d', $max = '-20 years'); ?>
-          <br><br> <?php
-        }
-      ?>
-    @elseif ($users < 1)
-      Please enter number between 1 - 99.
+    <!-- If errors are found, lists their appropriate message
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    @if($errors->get('quantity'))
+      <ul class="errors">
+        @foreach($errors->get('quantity') as $error)
+          <li>{{ $error }}</li>
+        @endforeach
+      </ul>
     @endif
+    <!-- Uses external package logic to generate random user data
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <?php
+      $faker = Faker\Factory::create();
+      for ($i=0; $i < $quantity; $i++) {
+        echo $faker->name; ?>
+        <br> <?php
+        echo $faker->date($format = 'Y-m-d', $max = '-20 years'); ?>
+        <br> <?php
+        echo $faker->email; ?>
+        <br><br> <?php
+      }
+    ?>
   </div>
 </div>
 <!-- End of Generated Users
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-@stop
+@endsection
 
 @section('body')
-@stop
+@endsection

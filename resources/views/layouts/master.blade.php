@@ -16,7 +16,7 @@
 
     <!-- Google Fonts
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,600" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
     <!-- Font Awesome
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,8 +42,8 @@
       </section>
 
       <hr>
-      <footer id="footer">
-        Built by Christian Saravia, &copy; {{ date('Y') }}. Source code: <a href="https://github.com/christiansaravia/p3"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <footer class="footer">
+        Built by Christian Saravia. Source code: <a href="https://github.com/christiansaravia/p3"><i class="fa fa-github" aria-hidden="true"></i></a>
       </footer>
       <br>
 

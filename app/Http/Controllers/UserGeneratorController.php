@@ -13,8 +13,8 @@ class UserGeneratorController extends Controller
      */
     public function index()
     {
-      $users = 0;
-      return view('pages.user-generator')->with('users', $users);
+      $quantity = 0;
+      return view('pages.user-generator')->with('quantity', $quantity);
     }
 
     /**
@@ -22,12 +22,16 @@ class UserGeneratorController extends Controller
      */
     public function generate(Request $request)
     {
-      # Validate
+      # Validation
       $this->validate($request , [
-        #'users' => 'required|min:1|max:2',
-        'users' => 'required',
+        'quantity' => 'required|integer|min:1|max:99',
       ]);
-      $users = $_POST['users'];
-      return view('pages.user-generator')->with('users', $users);
+
+      # Generates random user data
+      $quantity = $request->input('quantity');
+      # quantity (number of random users requested by user) will be passed into the Faker\Factory external package logic that will generate the specified user data
+
+      # Prints the results
+      return view('pages.user-generator')->with('quantity', $quantity);
     }
 }

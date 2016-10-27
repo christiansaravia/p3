@@ -2,10 +2,10 @@
 
 @section('title')
   Developer's Best Friend
-@stop
+@endsection
 
 @section('head')
-@stop
+@endsection
 
 @section('content')
   <div class="row">
@@ -29,11 +29,11 @@
   <div class="row">
     <div class="col-md-12">
       <h2>Random User Generator</h2>
-      <p>Like Lorem Ipsum, but for people!</p>
+      <p>Like Lorem Ipsum, but for people! This generator creates a random name, birthdate, and email for each user.</p>
       <a href="/user-generator"><button class="btn btn-primary">Generate users <i class="fa fa-users" aria-hidden="true"></i></button></a>
     </div>
   </div>
-@stop
+@endsection
 
 @section('body')
-@stop
+@endsection

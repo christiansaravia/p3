@@ -22,12 +22,16 @@ class LipsumGeneratorController extends Controller
      */
     public function generate(Request $request)
     {
-      # Validate
+      # Validation
       $this->validate($request , [
-        #'quantity' => 'required|min:1|max:2',
-        'quantity' => 'required',
+        'quantity' => 'required|integer|min:1|max:99',
       ]);
-      $quantity = $_POST['quantity'];
+
+      # Generate lorem ipsum text
+      $quantity = $request->input('quantity');
+      # quantity (number of paragraphs requested by user) will be passed into the Badcow\LoremIpsum external package logic that will generate the lorem ipsum text
+
+      # Prints the results
       return view('pages.lipsum-generator')->with('quantity', $quantity);
     }
 }
