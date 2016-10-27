@@ -9,7 +9,7 @@ This is a web application built with Laravel which includes a Lorem Ipsum Genera
 The web application uses one external package to help generate the lorem ipsum text (badcow/lorem-ipsum), and a second external package to generate random user name, birthdate, and email (fzaninotto/faker).
 
 ## Demo
-<#>
+<https://youtu.be/95xY0LqO21Y>
 
 ## Details for teaching team
 No login required.
