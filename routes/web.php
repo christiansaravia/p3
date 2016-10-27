@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/lipsum-generator', 'LipsumGeneratorController@get');
-Route::post('/lipsum-generator', 'LipsumGeneratorController@post');
+Route::get('/lipsum-generator', 'LipsumGeneratorController@index')->name('lipsum-generator.index');
+Route::post('/lipsum-generator', 'LipsumGeneratorController@generate')->name('lipsum-generator.generate');
 
-Route::get('/user-generator', 'UserGeneratorController@index');
-Route::post('/user-generator', 'UserGeneratorController@store');
+Route::get('/user-generator', 'UserGeneratorController@index')->name('user-generator.index');
+Route::post('/user-generator', 'UserGeneratorController@generate')->name('user-generator.generate');

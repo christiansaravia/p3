@@ -9,24 +9,24 @@ use P3\Http\Requests;
 class LipsumGeneratorController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * Get
      */
-    public function get()
+    public function index()
     {
       $quantity = 0;
       return view('pages.lipsum-generator')->with('quantity', $quantity);
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * Post
      */
-    public function post(Request $request)
+    public function generate(Request $request)
     {
+      # Validate
+      $this->validate($request , [
+        #'quantity' => 'required|min:1|max:2',
+        'quantity' => 'required',
+      ]);
       $quantity = $_POST['quantity'];
       return view('pages.lipsum-generator')->with('quantity', $quantity);
     }

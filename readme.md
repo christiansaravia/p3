@@ -15,6 +15,8 @@ The web application uses one external package to help generate the lorem ipsum t
 No login required.
 
 ## Outside code
-* External package: #
+* External package: badcow/lorem-ipsum (https://github.com/Badcow/LoremIpsum)
+* External package: fzaninotto/faker (https://github.com/fzaninotto/Faker)
 * Bootstrap: http://getbootstrap.com/
 * Font Awesome: http://fontawesome.io/
+* Emoji CSS: https://github.com/afeld/emoji-css/

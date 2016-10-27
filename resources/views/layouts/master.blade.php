@@ -10,14 +10,25 @@
         @yield('title','P3')
     </title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,600" type="text/css">
+    <!-- Google Fonts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,600" type="text/css" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://use.fontawesome.com/edf8d2d607.js"></script>
+
+    <!-- Custom CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="/css/styles.css" type="text/css" rel="stylesheet">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="img/squirrel.png">
 
     {{-- Yield any page specific CSS files or anything else you might want in the head --}}
     @yield('head')
@@ -31,7 +42,7 @@
       </section>
 
       <hr>
-      <footer style="font-size:.8em">
+      <footer id="footer">
         Built by Christian Saravia, &copy; {{ date('Y') }}. Source code: <a href="https://github.com/christiansaravia/p3"><i class="fa fa-github" aria-hidden="true"></i></a>
       </footer>
       <br>
